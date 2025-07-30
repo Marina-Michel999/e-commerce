@@ -3,7 +3,7 @@ import { calcAfterDicount } from '../../utils/calcDiscout';
 import ProductRating from '../ProuductRating/ProductRating';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
-import { wishListContext } from '../../context/WishlistContext';
+import { WishListContext } from '../../context/WishlistContext';
 
 export default function ProductCard({productInfo}) {
     const {
@@ -18,7 +18,7 @@ export default function ProductCard({productInfo}) {
 } = productInfo;
 
 const {handleAddProductToCart} = useContext(CartContext)
-const {handleAddProductTowishList , idWishListArray ,wishListKey} = useContext(wishListContext)
+const {handleAddProductTowishList , idWishListArray ,wishListKey} = useContext(WishListContext)
 const idListLocalStorage = localStorage.getItem(wishListKey)
   return (
     <>

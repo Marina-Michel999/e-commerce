@@ -8,14 +8,14 @@ import ProductRating from '../ProuductRating/ProductRating'
 import { calcAfterDicount } from '../../utils/calcDiscout'
 import { CartContext } from '../../context/CartContext';
 import React, { useContext } from 'react'
-import { wishListContext } from '../../context/WishlistContext'
+import { WishListContext } from '../../context/WishlistContext'
 
 
 
 
 export default function ProductDetailsCard({productDetails}) {
 const {handleAddProductToCart ,  handleCountCart , idWishListArray} = useContext(CartContext)
-const {handleAddProductTowishList ,} = useContext(wishListContext)
+const {handleAddProductTowishList ,} = useContext(WishListContext)
 const {quantity , brand ,images , priceAfterDiscount , ratingsAverage , ratingsQuantity , title ,price ,description , id , count} = productDetails;
 const idListLocalStorage = localStorage.getItem('idWishList')
 

@@ -5,7 +5,7 @@ import { AuthContext } from "./AuthContext";
 import { getIdFromToken } from "../services/getIdFromToken";
 
 
-export const wishListContext = createContext();
+export const WishListContext = createContext();
 
 export default function WishListProvider({children}) {
     const[wishListInfo , setWishListInfo] = useState(null)
@@ -87,7 +87,7 @@ export default function WishListProvider({children}) {
             console.log(error)
         }
     }
-    return <wishListContext.Provider value={{handleAddProductTowishList , wishListInfo , isLoading , isError , error ,idWishListArray ,handleDeleteWishListElement , count , wishListKey} }>
+    return <WishListContext.Provider value={{handleAddProductTowishList , wishListInfo , isLoading , isError , error ,idWishListArray ,handleDeleteWishListElement , count , wishListKey} }>
         {children}
-    </wishListContext.Provider>
+    </WishListContext.Provider>
 }
