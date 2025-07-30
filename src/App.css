@@ -1,0 +1,7 @@
+.active{
+    color: var(--color-mainColor);
+}
+.menu li > *:hover{
+    background-color: transparent !important;
+    color: var(--color-mainColor);
+}

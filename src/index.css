@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+ @theme{
+  --color-mainColor:#AA60C8;
+  --color-lighterColor:#FFDFEF;
+  --color-lightColor:#f0f3f2;
+  --color-ratindColor:#ffc908;
+  --font-mainFont: "poppins" , sans-serif;
+  --font-dancing:'dancing-script';
+}
+
+@layer base{
+    body{
+        @apply font-mainFont text-gray-700;
+    }
+    a , span {
+        @apply inline-block;
+    }
+    button , a {
+        @apply cursor-pointer;
+    }
+    .btn{
+        @apply px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 transition-colors duration-200;
+    }
+    .form-control{
+        @apply px-4 py-2 border border-gray-200 rounded-md focus:outline-0 focus:border-mainColor;
+    }
+}
+
+.swiper-button-prev,.swiper-button-next{
+    @apply size-12! rounded-full! bg-fuchsia-400/60 after:text-lg! after:text-white font-bold
+}
+
+.swiper-pagination-bullet {
+    @apply w-4! rounded-full! bg-gray-700!
+}
