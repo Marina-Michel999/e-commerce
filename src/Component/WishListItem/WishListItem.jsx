@@ -1,11 +1,11 @@
 import React from 'react'
 import ProductRating from '../ProuductRating/ProductRating'
 import { useContext } from 'react'
-import { wishListContext } from '../../context/WishlistContext'
+import { WishListContext } from '../../context/WishlistContext'
 import { CartContext } from '../../context/CartContext';
 
 export default function WishListItem({price , imageCover , ratingsAverage ,title ,category , id ,priceAfterDiscount}) {
-  const {handleDeleteWishListElement } = useContext(wishListContext);
+  const {handleDeleteWishListElement } = useContext(WishListContext);
   const {handleAddProductToCart } = useContext(CartContext);
   
 

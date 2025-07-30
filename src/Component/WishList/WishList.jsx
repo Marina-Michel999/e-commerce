@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
-import { wishListContext } from '../../context/WishlistContext'
+import { WishListContext } from '../../context/WishlistContext'
 import Loading from '../Loading/Loading'
 import ProductRating from '../ProuductRating/ProductRating'
 import WishListItem from '../WishListItem/WishListItem'
 
 export default function WishList() {
-  const {wishListInfo , isLoading , count} =useContext(wishListContext)
+  const {wishListInfo , isLoading , count} =useContext(WishListContext)
   if (isLoading) {
     return (
             <>
