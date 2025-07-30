@@ -8,7 +8,7 @@ import ProductRating from '../ProuductRating/ProductRating'
 import { calcAfterDicount } from '../../utils/calcDiscout'
 import { CartContext } from '../../context/CartContext';
 import React, { useContext } from 'react'
-import { wishListContext } from '../../context/wishlistContext'
+import { wishListContext } from '../../context/WishlistContext'
 
 
 

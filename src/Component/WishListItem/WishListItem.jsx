@@ -1,7 +1,7 @@
 import React from 'react'
 import ProductRating from '../ProuductRating/ProductRating'
 import { useContext } from 'react'
-import { wishListContext } from '../../context/wishlistContext'
+import { wishListContext } from '../../context/WishlistContext'
 import { CartContext } from '../../context/CartContext';
 
 export default function WishListItem({price , imageCover , ratingsAverage ,title ,category , id ,priceAfterDiscount}) {

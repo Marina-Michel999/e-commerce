@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { wishListContext } from '../../context/wishlistContext'
+import { wishListContext } from '../../context/WishlistContext'
 import Loading from '../Loading/Loading'
 import ProductRating from '../ProuductRating/ProductRating'
 import WishListItem from '../WishListItem/WishListItem'

@@ -1,5 +1,5 @@
 import React from 'react'
-import FeaturedProduct from '../FeaturedProduct/featuredProduct'
+import FeaturedProduct from '../FeaturedProduct/FeaturedProduct'
 
 export default function Product() {
   return (

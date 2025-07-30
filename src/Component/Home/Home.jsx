@@ -3,7 +3,7 @@ import HomeSlider from '../HomeSlider/HomeSlider'
 import HomeFeature from '../HomeFeatures/HomeFeature'
 import HomeCategories from '../HomeCategories/HomeCategories'
 import HomeDeals from '../HomeDeals/HomeDeals'
-import FeaturedProduct from '../FeaturedProduct/featuredProduct'
+import FeaturedProduct from '../FeaturedProduct/FeaturedProduct'
 
 export default function Home() {
   return (

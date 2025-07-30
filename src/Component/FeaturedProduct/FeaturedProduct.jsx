@@ -2,7 +2,7 @@
 import { useContext } from 'react';
 import Loading from '../Loading/Loading';
 import ProductCard from '../ProductCard/ProductCard';
-import { ProductContext } from '../../context/productContext';
+import { ProductContext } from '../../context/ProductContext';
 export default function FeaturedProduct() {
     const {isLoadind , products  } = useContext(ProductContext)
 

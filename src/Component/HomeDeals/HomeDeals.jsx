@@ -3,7 +3,7 @@ import React, { useContext, useEffect , useState } from 'react'
 import ProductCard from '../ProductCard/ProductCard'
 import Loading from '../Loading/Loading';
 import { CalcLeftedTime } from '../../utils/calcLeftDate';
-import { ProductContext } from '../../context/productContext';
+import { ProductContext } from '../../context/ProductContext';
 
 export default function HomeDeals() {
     const [leftedTime , setLeftedTime] = useState({hour: 0 , min:0 , sec:0 })
