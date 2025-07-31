@@ -22,7 +22,7 @@ const idListLocalStorage = localStorage.getItem('idWishList')
   console.log(productDetails)
   return (
     <>
-    <section>
+    <section className='py-34'>
  
         <div className="container mx-auto">
             <div className="flex flex-col md:flex-row p-10 shadow-2xl md:w-5/6 md:mx-auto  my-7 mx-4 gap-4 relative">
