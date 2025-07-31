@@ -30,6 +30,10 @@ export default function Order() {
   useEffect(()=>{
     handleGetOrder()
   },[])
+   useEffect(()=>{
+    handleGetOrder()
+  },[token])
+
   if (isLoading) {
     return(
             <>

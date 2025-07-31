@@ -1,7 +1,8 @@
-import { Children, createContext, useEffect, useState } from "react";
+import { Children, createContext, useContext, useEffect, useState } from "react";
 import { addProductToCart, deleteCartItem, getProductFromCart, UpdateCountInCart } from "../services/addToCart";
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
+import { AuthContext } from "./AuthContext";
 
 const MySwal = withReactContent(Swal)
 
@@ -12,6 +13,7 @@ export default function CartProvider({children}) {
     const [isError , setIsError] = useState(false);
     const [isLoading , setIsLoading] = useState(true);
     const [error , setError] = useState(null);
+    const {token} = useContext(AuthContext)
     async function handleAddProductToCart({id}) {
         const response = await addProductToCart({id})
         console.log(response)
@@ -37,6 +39,10 @@ export default function CartProvider({children}) {
     useEffect(()=>{
         handleCartInfo()
     } , [])
+
+    useEffect(()=>{
+        handleCartInfo()
+    } , [token])
 
         async function handleDeleteElement({id}) {
         try {

@@ -39,7 +39,7 @@ const validationSchema = yup.object({
     })
   return (
     <>
-    <div className="container mx-auto py-15 min-h-96 px-7  ">
+    <div className="container mx-auto py-36 min-h-[700px] px-7  ">
         <form action=""
         onSubmit={formik.handleSubmit}
         className='space-y-5'

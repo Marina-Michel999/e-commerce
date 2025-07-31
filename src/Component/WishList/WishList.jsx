@@ -28,7 +28,7 @@ export default function WishList() {
           </div>
           <p className='text-gray-500 text-sm'>{count?count:0} items</p>
           <div className='bg-gray-500/20 h-0.5 w-full'></div>
-          {wishListInfo.map((product)=>(
+          {wishListInfo?.map((product)=>(
             <WishListItem
             key={product.id}
             price={product.price}

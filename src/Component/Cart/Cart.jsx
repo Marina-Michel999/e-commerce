@@ -18,6 +18,29 @@ export default function Cart() {
     )
      
   }
+  if(!cartInfo || !cartInfo.data){
+      return(
+              <div className="container mx-auto py-32 min-h-60">
+      <div className='w-[95%] sm:w-[500px] md:w-[730px] lg:w-[950px]  sm mx-auto p-3 sm:p-10 shadow-2xl my-14'>
+        <div className='space-y-2'>
+          <div  className='text-mainColor font-bold text-2xl space-x-2'>
+            <i className="fa-solid fa-cart-shopping"></i>
+            <span>Your cart</span>
+
+          </div>
+          <p className='text-gray-500 text-sm'>0 items</p>
+         
+          <div className='p-5 flex justify-center items-center'>
+            <p className='text-xl'>your cart is empty</p>
+          </div>
+
+
+    
+          </div>
+        </div>
+      </div>
+      )
+  }
   const {numOfCartItems , data} = cartInfo;
   const {products , totalCartPrice } = data
   return (

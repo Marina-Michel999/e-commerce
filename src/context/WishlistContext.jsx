@@ -54,6 +54,10 @@ export default function WishListProvider({children}) {
         handleWishListInfo()
     } , [])
 
+        useEffect(()=>{
+        handleWishListInfo()
+    } , [token])
+
         async function handleDeleteWishListElement({id}) {
         try {
             const result = await Swal.fire({

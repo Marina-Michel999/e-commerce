@@ -68,10 +68,10 @@ export default function Register() {
   return (
     <>
     <main className=''>
-      <div className="container mx-auto grid md:grid-cols-2 lg:gap-4 py-28 px-4">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:gap-4 py-28 px-4">
         {/* left */}
-        <div>
-        <div className='p-10 space-y-10 bg-cover bg-center h-sreen min-h-[1000px] w-full relative '
+        <div className='w-full'>
+        <div className='p-10 space-y-10 bg-cover bg-center h-screen min-h-[900px]  relative '
         style={{backgroundImage:`url(${bgImg})`}}
         >
         <div className="bg-layer bg-gray-950/60 absloute absolute top-0 right-0 left-0 bottom-0 px-10 py-20 space-y-10 ">
